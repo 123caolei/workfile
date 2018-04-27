@@ -1,0 +1,8 @@
+1.查看HWID和硬件的相关信息:gooftool probe |less
+2.查看已安装的image版本：cat /etc/lsb-release
+3.查看FW版本信息：crossystem
+4.查看ec版本：ectool version或者mosys ec info
+5.查看bios版本(linux):sudo dmidecode -t num,其中num选0看bios，选1看系统信息
+  chromeos上查bios crossystem的fwid
+6.
+

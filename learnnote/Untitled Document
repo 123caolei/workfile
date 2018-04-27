@@ -1,0 +1,11 @@
+
+ （1） 使用的make_xxx脚本后接的操作项名称有所变化，使用前先help一下
+ （2） 和shopfloor什么关系？ 二者的使用中tftp起什么作用？
+ （3） 制作RMA的方式（使用factorytest或者test和toolkit的组合有什么差异？）
+       制作成功的RMA在chromebook上安装时用ctrl+u进u盘装，而不切recovery？
+       安装过程中的报错如何看？（了解磁盘分区存放的内容，定位是哪一块需要更换）
+ （4）DHCP无法给chromebook分配ip,试试重启ubuntu
+ （5）新的代码json，测试代码结构是什么样的，如何定位和修改测试项？
+
+修改端口为什么不是修改miniomaha的端口
+

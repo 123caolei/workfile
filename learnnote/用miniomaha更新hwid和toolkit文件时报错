@@ -1,0 +1,27 @@
+同样的hwid文件和toolkit在有些电脑上能正常更新，有些电脑上报错
+-->改toolkit解压打包时加上参数--version　xxx（即电脑上显示的版本信息，随便改成不一样的就行），尝试能解决
+-->bash解释器较老旧，需要升级：
+　　　　Ubuntu系统软件升级命令（升级全部软件）：
+　　　　sudo apt-get update    更新可升级的软件列表
+　　　　sudo apt-get upgrade   真正安装更新软件
+
+查看bash版本：bash -version
+bash下载地址：http://ftp.gnu.org/gnu/bash/
+点击网址，下载一版bash
+解压：tar zxvf bash-4.2.tar.gz
+　　　　　cd bash-4.2
+　　　　　./configure
+　　　　　　make
+　　　　　　make install
+因为bash默认是安装在/usr/local/bin/目录下，所以需要创建一个链接到 /bin/目录下，安装完毕后需要重启生效！
+
+mv /bin/bash /bin/bash.bak  备份原来的bash
+ln -s /path/to/bash /bin/bash 安装完之后会产生一个bash文件，把它连接到/bin下面去，系统默认使用的是/bin/bash
+
+重启生效
+
+
+
+
+启动linux时出现启动选项，选择ubuntu后黑屏，重启一样
+-->　选择高级选项，选择上一个版本的linux，enter进入

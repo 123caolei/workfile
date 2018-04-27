@@ -1,0 +1,285 @@
+(cr) (factory-coral-10122.B/(c779127...)) caolei@caolei-TianYi5060 ~/trunk/src/scripts $ ./setup_board --board=coralINFO    : Elapsed time (run_chroot_version_hooks): 0m1s
+INFO    : Updating chroot
+INFO    : Clearing shadow utils lockfiles under /
+INFO    : Updating cross-compilers
+11:11:13: INFO: Determining required toolchain updates...
+11:11:13: INFO: Nothing to update!
+INFO    : Updating the SDK
+
+Local copy of remote index is up-to-date and will be used.
+
+Local copy of remote index is up-to-date and will be used.
+
+Local copy of remote index is up-to-date and will be used.
+Starting fast-emerge.
+ Building package virtual/target-sdk world on root
+Calculating deps...
+Deps calculated in 0m24.1s
+[ebuild     U  ] dev-util/puffin-0.0.1-r166::chromiumos [0.0.1-r164::chromiumos] USE="cros_host -asan -cros-debug -profiling {-test}" 0 KiB
+[ebuild     U  ] chromeos-base/update_engine-0.0.3-r2915::chromiumos [0.0.3-r2913::chromiumos] USE="cros_host dbus delta_generator -asan -cros-debug -cros_p2p -hwid_override -mtd -power_management -profiling -systemd {-test}" 0 KiB
+
+Total: 2 packages (2 upgrades), Size of downloads: 0 KiB
+Pending 0/2, Fetching 2/2, [Time 11:11:40 | Elapsed 0m24.5s | Load 0.58 0.18 0.2]
+Fetched dev-util/puffin-0.0.1-r166 in 0.04s
+Fetched chromeos-base/update_engine-0.0.3-r2915 in 0.04s
+Started dev-util/puffin-0.0.1-r166 (logged in /tmp/puffin-0.0.1-r166-Lhf2qo)
+=== Start output for job puffin-0.0.1-r166 (0m5.1s) ===
+puffin-0.0.1-r166: >>> Emerging (1 of 1) dev-util/puffin-0.0.1-r166::chromiumos
+puffin-0.0.1-r166:  * Running stacked hooks for pre_pkg_setup
+puffin-0.0.1-r166:  *    sysroot_build_bin_dir ...                                          [ ok ]
+puffin-0.0.1-r166:  * Running stacked hooks for post_pkg_setup
+puffin-0.0.1-r166:  *    python_eclass_hack ...                                             [ ok ]
+puffin-0.0.1-r166:  * Running stacked hooks for pre_src_unpack
+puffin-0.0.1-r166:  *    python_multilib_setup ...                                          [ ok ]
+puffin-0.0.1-r166: >>> Unpacking source...
+puffin-0.0.1-r166:  * CROS_WORKON_SUBDIR:
+puffin-0.0.1-r166:  * CROS_WORKON_REPO: https://chromium.googlesource.com https://chromium.googlesource.com
+puffin-0.0.1-r166:  * CROS_WORKON_PROJECT: chromiumos/platform2 chromiumos/platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_LOCALNAME: ../platform2 ../platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_DESTDIR: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2 /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_COMMIT: e16c87593ddaa5454bb3aebdbe514dc3ca6187db cf15a1e562830931aba41e41e9e8da08cc8f7715
+puffin-0.0.1-r166:  * CROS_WORKON_TREE: 67c5ae090bd5ad426ef01a5c37c2a1102925bb4f 59225b9e5c62251038111d87bf85a87eeb04086a
+puffin-0.0.1-r166:  * CROS_WORKON_SRCPATH:
+puffin-0.0.1-r166: Cloning into '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2'...
+puffin-0.0.1-r166: done.
+puffin-0.0.1-r166: Cloning into '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'...
+puffin-0.0.1-r166: done.
+puffin-0.0.1-r166: >>> Source unpacked in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work
+puffin-0.0.1-r166:  * Running stacked hooks for post_src_unpack
+puffin-0.0.1-r166:  *    asan_init ...                                                      [ ok ]
+puffin-0.0.1-r166: >>> Preparing source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: >>> Source prepared.
+puffin-0.0.1-r166: >>> Configuring source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py --host --libdir=/usr/lib64 --use_flags=abi_x86_64 amd64 cros_host elibc_glibc kernel_linux userland_GNU --jobs=4 --action=configure --cache_dir=/var/cache/portage/dev-util/puffin /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/puffin.gyp
+puffin-0.0.1-r166: >>> Source configured.
+puffin-0.0.1-r166: >>> Compiling source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py --host --libdir=/usr/lib64 --use_flags=abi_x86_64 amd64 cros_host elibc_glibc kernel_linux userland_GNU --jobs=4 --action=compile --cache_dir=/var/cache/portage/dev-util/puffin all
+puffin-0.0.1-r166: ninja: Entering directory `/var/cache/portage/dev-util/puffin/out/Default'
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.bit_reader.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.bit_writer.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.huffer.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.huffman_table.o
+puffin-0.0.1-r166: [1/24] CXX platform/puffin/src/libpuffpatch-static.bit_reader.o
+puffin-0.0.1-r166: [1/24] CXX platform/puffin/src/libpuffpatch-static.puff_reader.o
+puffin-0.0.1-r166: [2/24] CXX platform/puffin/src/libpuffpatch-static.bit_writer.o
+puffin-0.0.1-r166: [2/24] CXX platform/puffin/src/libpuffpatch-static.puff_writer.o
+puffin-0.0.1-r166: [3/24] CXX platform/puffin/src/libpuffpatch-static.huffer.o
+puffin-0.0.1-r166: [3/24] CXX platform/puffin/src/libpuffpatch-static.puffer.o
+puffin-0.0.1-r166: [4/24] CXX platform/puffin/src/libpuffpatch-static.puff_reader.o
+puffin-0.0.1-r166: [4/24] CXX platform/puffin/src/libpuffpatch-static.puffin_stream.o
+puffin-0.0.1-r166: [5/24] CXX platform/puffin/src/libpuffpatch-static.huffman_table.o
+puffin-0.0.1-r166: [5/24] CXX platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: [6/24] CXX platform/puffin/src/libpuffpatch-static.puff_writer.o
+puffin-0.0.1-r166: [6/24] CXX platform/puffin/src/libpuffdiff-static.file_stream.o
+puffin-0.0.1-r166: [7/24] CXX platform/puffin/src/libpuffpatch-static.puffer.o
+puffin-0.0.1-r166: [7/24] CXX platform/puffin/src/libpuffdiff-static.memory_stream.o
+puffin-0.0.1-r166: [8/24] CXX platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: FAILED: platform/puffin/src/libpuffpatch-static.puffpatch.o 
+puffin-0.0.1-r166: x86_64-pc-linux-gnu-clang++ -MMD -MF platform/puffin/src/libpuffpatch-static.puffpatch.o.d -DUSE_BRILLO=1 -DNDEBUG -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/include -Iplatform/puffin/libpuffpatch-static.gen/include -Igen/include -I/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2 -I/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform -Wextra -Wall -Wno-psabi -Wunused -Wno-unused-parameter -ggdb3 -fstack-protector-strong -Wformat=2 -fvisibility=internal -Wa,--noexecstack -Werror -fPIC -DUSE_RTTI_FOR_TYPE_TAGS -Wno-c++11-extensions -Wno-unused-local-typedefs -DBASE_VER=395517 -pthread -I/usr/include/chromeos -I/usr/include/base-395517 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/nss -I/usr/include/nspr -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -Wnon-virtual-dtor -std=gnu++14 -DNDEBUG -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -O2 -pipe -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables  -c ../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/puffpatch.cc -o platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: ../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/puffpatch.cc:22:10: fatal error: 'puffin/src/puffin.pb.h' file not found
+puffin-0.0.1-r166: #include "puffin/src/puffin.pb.h"
+puffin-0.0.1-r166:          ^~~~~~~~~~~~~~~~~~~~~~~~
+puffin-0.0.1-r166: 1 error generated.
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166: [9/24] CXX platform/puffin/src/libpuffdiff-static.file_stream.o
+puffin-0.0.1-r166: [10/24] CXX platform/puffin/src/libpuffdiff-static.memory_stream.o
+puffin-0.0.1-r166: [11/24] CXX platform/puffin/src/libpuffpatch-static.puffin_stream.o
+puffin-0.0.1-r166: ninja: build stopped: subcommand failed.
+puffin-0.0.1-r166: Traceback (most recent call last):
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 333, in <module>
+puffin-0.0.1-r166:     main(sys.argv[1:])
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 329, in main
+puffin-0.0.1-r166:     getattr(p2, options.action)(options.args)
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 270, in compile
+puffin-0.0.1-r166:     % ' '.join(map(repr, ninja_args)))
+puffin-0.0.1-r166: AssertionError: Error running: 'ninja' '-C' '/var/cache/portage/dev-util/puffin/out/Default' '-j' '4' 'all'
+puffin-0.0.1-r166:  * ERROR: dev-util/puffin-0.0.1-r166::chromiumos failed (compile phase):
+puffin-0.0.1-r166:  *   (no error message)
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * Call stack:
+puffin-0.0.1-r166:  *     ebuild.sh, line   93:  Called src_compile
+puffin-0.0.1-r166:  *   environment, line 3579:  Called platform_src_compile
+puffin-0.0.1-r166:  *   environment, line 3179:  Called platform 'compile' 'all'
+puffin-0.0.1-r166:  *   environment, line 3139:  Called die
+puffin-0.0.1-r166:  * The specific snippet of code:
+puffin-0.0.1-r166:  *       "${cmd[@]}" || die
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * If you need support, post the output of `emerge --info '=dev-util/puffin-0.0.1-r166::chromiumos'`,
+puffin-0.0.1-r166:  * the complete build log and the output of `emerge -pqv '=dev-util/puffin-0.0.1-r166::chromiumos'`.
+puffin-0.0.1-r166:  * The complete build log is located at '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031140.log'.
+puffin-0.0.1-r166:  * For convenience, a symlink to the build log is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/build.log'.
+puffin-0.0.1-r166:  * The ebuild environment file is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/environment'.
+puffin-0.0.1-r166:  * Working directory: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166:  * S: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166: >>> Failed to emerge dev-util/puffin-0.0.1-r166, Log file:
+puffin-0.0.1-r166: >>>  '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031140.log'
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166:  * Messages for package dev-util/puffin-0.0.1-r166:
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166:  * ERROR: dev-util/puffin-0.0.1-r166::chromiumos failed (compile phase):
+puffin-0.0.1-r166:  *   (no error message)
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * Call stack:
+puffin-0.0.1-r166:  *     ebuild.sh, line   93:  Called src_compile
+puffin-0.0.1-r166:  *   environment, line 3579:  Called platform_src_compile
+puffin-0.0.1-r166:  *   environment, line 3179:  Called platform 'compile' 'all'
+puffin-0.0.1-r166:  *   environment, line 3139:  Called die
+puffin-0.0.1-r166:  * The specific snippet of code:
+puffin-0.0.1-r166:  *       "${cmd[@]}" || die
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * If you need support, post the output of `emerge --info '=dev-util/puffin-0.0.1-r166::chromiumos'`,
+puffin-0.0.1-r166:  * the complete build log and the output of `emerge -pqv '=dev-util/puffin-0.0.1-r166::chromiumos'`.
+puffin-0.0.1-r166:  * The complete build log is located at '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031140.log'.
+puffin-0.0.1-r166:  * For convenience, a symlink to the build log is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/build.log'.
+puffin-0.0.1-r166:  * The ebuild environment file is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/environment'.
+puffin-0.0.1-r166:  * Working directory: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166:  * S: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+=== Complete: job puffin-0.0.1-r166 (0m5.1s) ===
+Failed dev-util/puffin-0.0.1-r166 (in 0m5.1s), retrying later.
+Pending 2/2, Building 0/0, Retrying 1, [Time 11:11:45 | Elapsed 0m29.6s | Load 0.86 0.24 0.22]
+Retrying emerge of dev-util/puffin-0.0.1-r166.
+Started dev-util/puffin-0.0.1-r166 (logged in /tmp/puffin-0.0.1-r166-VFtsfn)
+Packages failed:
+	dev-util/puffin-0.0.1-r166
+=== Start output for job puffin-0.0.1-r166 (0m4.9s) ===
+puffin-0.0.1-r166: >>> Emerging (1 of 1) dev-util/puffin-0.0.1-r166::chromiumos
+puffin-0.0.1-r166:  * Running stacked hooks for pre_pkg_setup
+puffin-0.0.1-r166:  *    sysroot_build_bin_dir ...                                          [ ok ]
+puffin-0.0.1-r166:  * Running stacked hooks for post_pkg_setup
+puffin-0.0.1-r166:  *    python_eclass_hack ...                                             [ ok ]
+puffin-0.0.1-r166:  * Running stacked hooks for pre_src_unpack
+puffin-0.0.1-r166:  *    python_multilib_setup ...                                          [ ok ]
+puffin-0.0.1-r166: >>> Unpacking source...
+puffin-0.0.1-r166:  * CROS_WORKON_SUBDIR:
+puffin-0.0.1-r166:  * CROS_WORKON_REPO: https://chromium.googlesource.com https://chromium.googlesource.com
+puffin-0.0.1-r166:  * CROS_WORKON_PROJECT: chromiumos/platform2 chromiumos/platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_LOCALNAME: ../platform2 ../platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_DESTDIR: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2 /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin
+puffin-0.0.1-r166:  * CROS_WORKON_COMMIT: e16c87593ddaa5454bb3aebdbe514dc3ca6187db cf15a1e562830931aba41e41e9e8da08cc8f7715
+puffin-0.0.1-r166:  * CROS_WORKON_TREE: 67c5ae090bd5ad426ef01a5c37c2a1102925bb4f 59225b9e5c62251038111d87bf85a87eeb04086a
+puffin-0.0.1-r166:  * CROS_WORKON_SRCPATH:
+puffin-0.0.1-r166: Cloning into '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2'...
+puffin-0.0.1-r166: done.
+puffin-0.0.1-r166: Cloning into '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'...
+puffin-0.0.1-r166: done.
+puffin-0.0.1-r166: >>> Source unpacked in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work
+puffin-0.0.1-r166:  * Running stacked hooks for post_src_unpack
+puffin-0.0.1-r166:  *    asan_init ...                                                      [ ok ]
+puffin-0.0.1-r166: >>> Preparing source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: >>> Source prepared.
+puffin-0.0.1-r166: >>> Configuring source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py --host --libdir=/usr/lib64 --use_flags=abi_x86_64 amd64 cros_host elibc_glibc kernel_linux userland_GNU --jobs=4 --action=configure --cache_dir=/var/cache/portage/dev-util/puffin /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/puffin.gyp
+puffin-0.0.1-r166: >>> Source configured.
+puffin-0.0.1-r166: >>> Compiling source in /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin ...
+puffin-0.0.1-r166: /var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py --host --libdir=/usr/lib64 --use_flags=abi_x86_64 amd64 cros_host elibc_glibc kernel_linux userland_GNU --jobs=4 --action=compile --cache_dir=/var/cache/portage/dev-util/puffin all
+puffin-0.0.1-r166: ninja: Entering directory `/var/cache/portage/dev-util/puffin/out/Default'
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.bit_reader.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.bit_writer.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.huffer.o
+puffin-0.0.1-r166: [0/24] CXX platform/puffin/src/libpuffpatch-static.huffman_table.o
+puffin-0.0.1-r166: [1/24] CXX platform/puffin/src/libpuffpatch-static.bit_reader.o
+puffin-0.0.1-r166: [1/24] CXX platform/puffin/src/libpuffpatch-static.puff_reader.o
+puffin-0.0.1-r166: [2/24] CXX platform/puffin/src/libpuffpatch-static.bit_writer.o
+puffin-0.0.1-r166: [2/24] CXX platform/puffin/src/libpuffpatch-static.puff_writer.o
+puffin-0.0.1-r166: [3/24] CXX platform/puffin/src/libpuffpatch-static.huffer.o
+puffin-0.0.1-r166: [3/24] CXX platform/puffin/src/libpuffpatch-static.puffer.o
+puffin-0.0.1-r166: [4/24] CXX platform/puffin/src/libpuffpatch-static.puff_reader.o
+puffin-0.0.1-r166: [4/24] CXX platform/puffin/src/libpuffpatch-static.puffin_stream.o
+puffin-0.0.1-r166: [5/24] CXX platform/puffin/src/libpuffpatch-static.huffman_table.o
+puffin-0.0.1-r166: [5/24] CXX platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: [6/24] CXX platform/puffin/src/libpuffpatch-static.puff_writer.o
+puffin-0.0.1-r166: [6/24] CXX platform/puffin/src/libpuffdiff-static.file_stream.o
+puffin-0.0.1-r166: [7/24] CXX platform/puffin/src/libpuffpatch-static.puffer.o
+puffin-0.0.1-r166: [7/24] CXX platform/puffin/src/libpuffdiff-static.memory_stream.o
+puffin-0.0.1-r166: [8/24] CXX platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: FAILED: platform/puffin/src/libpuffpatch-static.puffpatch.o 
+puffin-0.0.1-r166: x86_64-pc-linux-gnu-clang++ -MMD -MF platform/puffin/src/libpuffpatch-static.puffpatch.o.d -DUSE_BRILLO=1 -DNDEBUG -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -I../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/include -Iplatform/puffin/libpuffpatch-static.gen/include -Igen/include -I/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2 -I/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform -Wextra -Wall -Wno-psabi -Wunused -Wno-unused-parameter -ggdb3 -fstack-protector-strong -Wformat=2 -fvisibility=internal -Wa,--noexecstack -Werror -fPIC -DUSE_RTTI_FOR_TYPE_TAGS -Wno-c++11-extensions -Wno-unused-local-typedefs -DBASE_VER=395517 -pthread -I/usr/include/chromeos -I/usr/include/base-395517 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/nss -I/usr/include/nspr -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -Wnon-virtual-dtor -std=gnu++14 -DNDEBUG -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -O2 -pipe -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables  -c ../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/puffpatch.cc -o platform/puffin/src/libpuffpatch-static.puffpatch.o
+puffin-0.0.1-r166: ../../../../../../tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin/src/puffpatch.cc:22:10: fatal error: 'puffin/src/puffin.pb.h' file not found
+puffin-0.0.1-r166: #include "puffin/src/puffin.pb.h"
+puffin-0.0.1-r166:          ^~~~~~~~~~~~~~~~~~~~~~~~
+puffin-0.0.1-r166: 1 error generated.
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166: [9/24] CXX platform/puffin/src/libpuffdiff-static.file_stream.o
+puffin-0.0.1-r166: [10/24] CXX platform/puffin/src/libpuffpatch-static.puffin_stream.o
+puffin-0.0.1-r166: [11/24] CXX platform/puffin/src/libpuffdiff-static.memory_stream.o
+puffin-0.0.1-r166: ninja: build stopped: subcommand failed.
+puffin-0.0.1-r166: Traceback (most recent call last):
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 333, in <module>
+puffin-0.0.1-r166:     main(sys.argv[1:])
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 329, in main
+puffin-0.0.1-r166:     getattr(p2, options.action)(options.args)
+puffin-0.0.1-r166:   File "/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform2/common-mk/platform2.py", line 270, in compile
+puffin-0.0.1-r166:     % ' '.join(map(repr, ninja_args)))
+puffin-0.0.1-r166: AssertionError: Error running: 'ninja' '-C' '/var/cache/portage/dev-util/puffin/out/Default' '-j' '4' 'all'
+puffin-0.0.1-r166:  * ERROR: dev-util/puffin-0.0.1-r166::chromiumos failed (compile phase):
+puffin-0.0.1-r166:  *   (no error message)
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * Call stack:
+puffin-0.0.1-r166:  *     ebuild.sh, line   93:  Called src_compile
+puffin-0.0.1-r166:  *   environment, line 3579:  Called platform_src_compile
+puffin-0.0.1-r166:  *   environment, line 3179:  Called platform 'compile' 'all'
+puffin-0.0.1-r166:  *   environment, line 3139:  Called die
+puffin-0.0.1-r166:  * The specific snippet of code:
+puffin-0.0.1-r166:  *       "${cmd[@]}" || die
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * If you need support, post the output of `emerge --info '=dev-util/puffin-0.0.1-r166::chromiumos'`,
+puffin-0.0.1-r166:  * the complete build log and the output of `emerge -pqv '=dev-util/puffin-0.0.1-r166::chromiumos'`.
+puffin-0.0.1-r166:  * The complete build log is located at '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031145.log'.
+puffin-0.0.1-r166:  * For convenience, a symlink to the build log is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/build.log'.
+puffin-0.0.1-r166:  * The ebuild environment file is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/environment'.
+puffin-0.0.1-r166:  * Working directory: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166:  * S: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166: >>> Failed to emerge dev-util/puffin-0.0.1-r166, Log file:
+puffin-0.0.1-r166: >>>  '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031145.log'
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166:  * Messages for package dev-util/puffin-0.0.1-r166:
+puffin-0.0.1-r166: 
+puffin-0.0.1-r166:  * ERROR: dev-util/puffin-0.0.1-r166::chromiumos failed (compile phase):
+puffin-0.0.1-r166:  *   (no error message)
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * Call stack:
+puffin-0.0.1-r166:  *     ebuild.sh, line   93:  Called src_compile
+puffin-0.0.1-r166:  *   environment, line 3579:  Called platform_src_compile
+puffin-0.0.1-r166:  *   environment, line 3179:  Called platform 'compile' 'all'
+puffin-0.0.1-r166:  *   environment, line 3139:  Called die
+puffin-0.0.1-r166:  * The specific snippet of code:
+puffin-0.0.1-r166:  *       "${cmd[@]}" || die
+puffin-0.0.1-r166:  * 
+puffin-0.0.1-r166:  * If you need support, post the output of `emerge --info '=dev-util/puffin-0.0.1-r166::chromiumos'`,
+puffin-0.0.1-r166:  * the complete build log and the output of `emerge -pqv '=dev-util/puffin-0.0.1-r166::chromiumos'`.
+puffin-0.0.1-r166:  * The complete build log is located at '/var/log/portage/dev-util:puffin-0.0.1-r166:20180201-031145.log'.
+puffin-0.0.1-r166:  * For convenience, a symlink to the build log is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/build.log'.
+puffin-0.0.1-r166:  * The ebuild environment file is located at '/var/tmp/portage/dev-util/puffin-0.0.1-r166/temp/environment'.
+puffin-0.0.1-r166:  * Working directory: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+puffin-0.0.1-r166:  * S: '/var/tmp/portage/dev-util/puffin-0.0.1-r166/work/puffin-0.0.1/platform/puffin'
+=== Complete: job puffin-0.0.1-r166 (0m4.9s) ===
+Failed dev-util/puffin-0.0.1-r166 (in 0m4.9s). Your build has failed.
+Pending 2/2, [Time 11:11:50 | Elapsed 0m34.5s | Load 1.11 0.31 0.25]
+ERROR   : Thu Feb  1 11:11:51 CST 2018
+ERROR   :  PGID  PPID   PID     ELAPSED     TIME %CPU COMMAND
+ERROR   :    10     6    10    01:46:08 00:00:00  0.0 -bash
+ERROR   : 16352    10 16352       00:44 00:00:00  0.2  \_ /bin/bash ./setup_board --board=coral
+ERROR   : 16352 16352 16569       00:44 00:00:00  0.0      \_ /bin/bash /mnt/host/source/src/scripts/update_chroot --toolchain_boards=coral --usepkg
+ERROR   : 16352 16569 18930       00:00 00:00:00  0.0          \_ /bin/bash /mnt/host/source/src/scripts/update_chroot --toolchain_boards=coral --usepkg
+ERROR   : 16352 18930 18931       00:00 00:00:00  0.0              \_ ps f -o pgid,ppid,pid,etime,cputime,%cpu,command
+ERROR   : Arguments of 16569:  '--toolchain_boards=coral' '--usepkg'
+ERROR   : Backtrace:  (most recent call is last)
+ERROR   :  update_chroot:121:main(), called: die_err_trap  
+ERROR   : 
+ERROR   : Command failed:
+ERROR   :   Command 'sudo -E ${EMERGE_CMD} "${EMERGE_FLAGS[@]}" virtual/target-sdk world' exited with nonzero code: 1
+ERROR   : Thu Feb  1 11:11:51 CST 2018
+ERROR   :  PGID  PPID   PID     ELAPSED     TIME %CPU COMMAND
+ERROR   :    10     6    10    01:46:08 00:00:00  0.0 -bash
+ERROR   : 16352    10 16352       00:44 00:00:00  0.2  \_ /bin/bash ./setup_board --board=coral
+ERROR   : 16352 16352 18944       00:00 00:00:00  0.0      \_ /bin/bash ./setup_board --board=coral
+ERROR   : 16352 18944 18945       00:00 00:00:00  0.0          \_ ps f -o pgid,ppid,pid,etime,cputime,%cpu,command
+ERROR   : Arguments of 16352: ./setup_board '--board=coral'
+ERROR   : Backtrace:  (most recent call is last)
+ERROR   :  setup_board:108:main(), called: die_err_trap  
+ERROR   : 
+ERROR   : Command failed:
+ERROR   :   Command '"${SRC_ROOT}/scripts"/update_chroot ${UPDATE_ARGS}' exited with nonzero code: 1
+ERROR   :   (Note bash sometimes misreports "command not found" as exit code 1 instead of 127)

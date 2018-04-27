@@ -1,0 +1,5 @@
+如果测试项的结束运行完，会在factory device-data中记录xxxx.end:true　信息，重启后该信息会自动写入vpd　的rw区，此时测试项被杠掉
+
+
+如果想重新调出测试项，运行factory_restart　-a -d清除vpd　和device-data的信息
+或者手动删除vpd　和factory　ｄｅｖｉｃｅ-data中的结束节点信息，注意，只ｓｈａｎ

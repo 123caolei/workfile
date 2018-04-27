@@ -1,0 +1,16 @@
+Remote 定义了远程Git的名称，fetch给定了该git项目的存放地址(URL)。Review定义了当使用命令’repo upload’上传更新后，审核代码的gerrit服务器的主机名。
+
+Name：A short name uniqueto this manifest file。用来作为每个项目的.git/config的远程名称。
+
+
+Project定义了一个新的项目
+
+Path：定义了git仓库应该把远程源码存放到本地的位置
+
+Name：git项目的名称
+
+Revision：定义了在仓库中使用哪个分支或者tag，如果没有说明，则repo sync会使用由<default ../>标记的版本。
+
+Groups：项目组的名称，有一些项目可能在被用在多个具体的实例中，所以将它们分组，通常有common，devel等组。
+
+ 
